@@ -1,0 +1,26 @@
+<html>
+
+
+<head>
+	<p>Django Girls Tutorial</p>
+</head>
+
+
+<body>
+
+	<div>
+		<a href="/">Djangogirls Blog</a>
+	</div>
+
+	{% for single_post in posts %}
+		<div>
+			<p>published : {{ single_post.published_date }}</p>
+			<h1>{{ single_post.title }}</h1>
+			<p>{{ single_post.text|linebreaksbr }}</p>
+		</div>
+	{% endfor %}
+</body>
+
+
+</html>
+
